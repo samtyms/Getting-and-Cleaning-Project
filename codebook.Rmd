@@ -1,0 +1,41 @@
+---
+title: "Code book"
+
+---
+
+## R Markdown
+
+Description:  This is the final project of the Week 4 in the JHU course Getting and Cleaning Data. The code book summarizes the data and variables in ResultTidyData.txt, which is the output of the project .
+To start:
+1.	You have to download source data from link below and unzip it to working directory of R Studio. https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip
+2.	You have to it perform in R script of R Studio.
+About the R script
+You need to save the R code "run_analysis.R" that you will perform 5 following steps (in accordance assigned task of course work):
+1.	Merging the training and the test sets to create one data set.
+1.1 Reading files (tables, vectors, labels)
+1.2 Assigning column names
+1.3 Merging all data in one set
+2.	Extracting only the measurements on the mean and standard deviation for each measurement
+2.1 Reading column names
+2.2 Create vector for defining ID, mean and standard deviation
+2.3 Making necessary subset from setAllInOne
+3.	Using descriptive activity names to name the activities in the data set
+4.	Appropriately labeling the data set with descriptive variable names
+5.	Creating a second, independent tidy data set with the average of each variable for each activity and each subject
+5.1 Creating second tidy data set
+5.2 Writing second tidy data set and saving it in txt file
+
+Text files downloaded:
+.	'features.txt'
+.	'activity_labels.txt'
+.	'subject_train.txt'
+.	'x_train.txt'
+.	'y_train.txt'
+.	'subject_test.txt'
+.	'x_test.txt'
+.	'y_test.txt'
+Variables used:
+.	x_train, y_train, x_test, y_test, subject_train and subject_test contain the data from the downloaded files.
+.	x_data, y_data and subject_data merge the previous datasets to further analysis.
+.	features contains the correct names for the x_data dataset, which are applied to the column names stored in
+
